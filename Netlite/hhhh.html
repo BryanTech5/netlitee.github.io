@@ -1,0 +1,98 @@
+<script>
+        let userBalance = 200000;  // Example user balance
+
+        function purchaseProduct(movieName, price, dailyInterest, imageUrl) {
+            if (userBalance >= price) {
+                userBalance -= price;
+                alert("Successful purchase!");
+
+                // Store purchased product details in localStorage
+                let purchasedProducts = JSON.parse(localStorage.getItem('purchasedProducts')) || [];
+                purchasedProducts.push({ movieName, price, dailyInterest, imageUrl, daysRemaining: 20 });
+                localStorage.setItem('purchasedProducts', JSON.stringify(purchasedProducts));
+
+                // Redirect to finance page
+                goToFinancePage();
+            } else {
+                alert("Insufficient balance");
+            }
+        }
+
+        function goToFinancePage() {
+            window.location.href = "finance.html";
+        }
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Page</title>
+    <style>
+        .productContainer { margin-bottom: 20px; }
+        .productContainer img { width: 100px; height: 150px; }
+        .productInner1 { float: left; }
+        .productInner2 { margin-left: 120px; }
+    </style>
+</head>
+<body>
+    <h2>Your Investments</h2>
+    <div id="investmentList"></div>
+    <button onclick="goToProductPage()">Back to Products</button>
+    <button onclick="viewBalance()">View Balance</button>
+
+    <script>
+        function loadInvestments() {
+            let purchasedProducts = JSON.parse(localStorage.getItem('purchasedProducts')) || [];
+            let investmentList = document.getElementById('investmentList');
+
+            purchasedProducts.forEach(product => {
+                let productDiv = document.createElement('div');
+                productDiv.className = 'productContainer';
+
+                productDiv.innerHTML = `
+                    <div class="productInner1">
+                        <img src="${product.imgSrc}" alt="${product.movieName}">
+                    </div>
+                    <div class="productInner2">
+                        <p>Movie Name: ${product.movieName}</p>
+                        <p>Daily Interest: ${product.dailyInterest}</p>
+                        <p>Days Remaining: ${product.daysRemaining}</p>
+                    </div>
+                `;
+
+                investmentList.appendChild(productDiv);
+            });
+        }
+
+        function goToProductPage() {
+            window.location.href = "product.html";
+        }
+
+        function viewBalance() {
+            window.location.href = "balance.html";
+        }
+
+        window.onload = loadInvestments;
+    </script>
+</body>
+</html>

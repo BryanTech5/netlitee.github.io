@@ -1,0 +1,67 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Team page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="logo"><h3></h3></div>
+        </div>
+        
+        <div class="bottom">
+            <div class="navbar">
+                <ul>
+                    
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="finance.html"><i class="fa-solid fa-coins"></i></a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-question"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <main class="TeamMain">
+        <div class="Bbackgroundfirst">
+            <h4 class="Teamtxt"></h4>
+            <div class="BBbackgroundd">
+       <div class="userinnerBox1">
+           <i class="fa-solid fa-money-bills"></i>
+           <h5 class="UserText"><span id="balanceDisplay">0</span></h5>
+       </div>
+       <div class="userinnerBox2">
+           <div class="usertext2"><button id="withdrawBtn">Withdraw</button></div>
+           <div class="usertext2"><button id="depositBtn">Deposit</button></div>
+           
+       </div>
+       </div> 
+       
+        </div>
+       
+    </main>
+       <!-- Balance Page: balance.html -->
+    <script src="js/script.js"></script>
+    <script>
+        function displayBalance() {
+            document.getElementById('balanceDisplay').innerText = "Balance: " + User.getBalance();
+        }
+
+        window.onload = displayBalance;
+    </script>
+
+    
+
+
+</body>
+</html>

@@ -1,0 +1,595 @@
+
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "poppins";
+    background-color: #171E26;
+}
+           
+           /* HEADER SECTIONS */
+header{
+    width: 100%;
+}
+.head{
+    background-color: #171E26;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 10px;
+}
+.logo{
+    color: white;
+    padding: 10px;
+    display: flex;
+}
+.logoColorText{
+    color: lawngreen;
+    font-size: 30px;
+}
+.fa-whatsapp{
+    position: absolute;
+    left: 85%;
+    top: 40%;
+    font-size: 20px;
+}
+
+.bottom{
+    background-color: #171E26;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 10px;
+}
+.navbar{
+    width: 100%;   
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+.navbar ul li a{
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 15px;
+}
+.navbar ul li:hover{
+    background-color: lawngreen;
+}
+
+
+          /* MAIN SECTIONS */
+          
+main{
+    margin-top: 64px;
+    margin-bottom: 50px;
+}
+
+.firstBox{
+    background-color: white;
+    height: 200px;
+    border-radius: 7px;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.firstBoximages{
+    display: flex;
+    width: 500%;
+    height: 100%;
+    animation: slideLeft 15s infinite;
+}
+.firstBoximages img{
+    width: 20%;
+    flex-shrink: 0;
+    transition: transform 0.5s ease;
+    object-fit: cover;
+}
+
+@keyframes slideLeft {
+  0% {
+        transform: translateX(1);
+ }
+  20% {
+        transform: translateX(-20%);
+ }
+  40% {
+        transform: translateX(-40%);
+ }
+  60% {
+        transform: translateX(-60%);
+ }
+  80% {
+        transform: translateX(-80%);
+ }
+  100% {
+        transform: translateX(-100%);
+ }
+   }   
+
+.announcement-box {
+    width : 100%;
+    height: 20px;  
+    overflow: hidden;
+    border: 1px solid : #343C45;
+    background-color: black;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin: auto;
+}
+
+.announcement-content {
+    font-size: 9px;
+    color: brown;
+    display:flex;
+    padding-top: 3px;
+    align-items: center;
+    white-space: nowrap;
+    animation: scroll-left 10s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}  
+.backgroundd{
+    background: #202630;
+    padding: 20px;
+    border-radius: 10px;
+} 
+.navbarTop{
+    width: 99%;
+    margin: auto;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+.navbarTop ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.navbarTop i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #29313C;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 50px;
+    width: 50px;
+    color: whitesmoke;
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+}
+.navbarTop i:hover{
+    background-color: lawngreen;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+}    
+.navbarTop ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.navbarTop ul li a{
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+}
+.Topicon{
+    position: absolute;
+    bottom: 0%;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+}
+
+
+/* PRODUCT MAIN*/  
+#productMain{
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+.movieHeader{
+    color: lawngreen;
+    margin-bottom: 10px;
+}   
+.productContainer{
+    display: flex;
+    margin-top: 20px;
+    background-color:  #29313C;
+    border-radius: 10px;
+    padding: 10px;
+}
+.productinner1{
+    width: 40%;
+    border-right: 1px solid #343C45;
+    display: block;
+    align-items: center;
+}
+.productinner1 img{
+    width: 90%;
+    height: 150px;
+    border-radius: 20px;    
+}
+.productinner2{
+    width: 60%;
+    padding: 5px;
+    text-align: left;
+    display: block;
+    justify-content: center;
+    padding-top: 10px;
+    
+}
+.productinner2 p{
+    display: block;
+    justify-content: center;
+    margin-left: 5px;
+    color: white;
+    font-weight: lighter;
+    font-size: 10px;
+    padding: 5px;
+}
+.buyBtn{
+    width: 90%;
+    padding: 3px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: lawngreen;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+}
+.buyBtn:hover{
+    cursor: pointer;
+}    
+
+/* ABOUT SECTIONS */
+.AboutHeader{
+    color: whitesmoke;
+}
+
+.aboutHeader2{
+    color: gray;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.aboutinnerText{
+    color: white;
+    font-size: 12px;
+    text-align: left;
+}
+footer{
+    width: 100%;
+    background-color: black;
+    margin-bottom: 50px;
+    
+}
+.aboutFooter{
+    width: 100%;
+    background-color: black;
+    margin-top: 10px;    
+    color: whitesmoke;
+    text-align: center;
+    font-size: 10px;
+}
+
+/* TEAM SECTIONS */
+
+.TeamMain{
+    margin-top: 40px;
+}
+.backgroundfirst{
+    background-color: #242A35;
+    width: 90%;
+    height:40px;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid lawngreen;
+}
+.Bbackgroundd{
+    background: #313A46;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.Teamtxt{
+    color: whitesmoke;
+    padding: 3px;
+    margin-left: 10px;
+    margin-top: 2px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+.innerBox1{
+    width: 50%;
+    padding: 5px;
+}
+.balance1{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: whitesmoke;
+}
+.innerBox2{
+    width: 50%;
+    padding: 5px;
+}
+.balance2{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: whitesmoke;
+}
+.Bbackgroundd p{
+    color: lawngreen;
+}
+.referralLinkBox{
+    width: 70%;
+    background-color: #242A35;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    margin-left: 10px;  
+    font-weight: lighter;  
+    font-size: 12px;  
+}
+.shareText{
+    color: white;
+    margin-left: 10px;
+}
+
+/* FINANCE  SECTIONS*/
+
+.FBbackgroundd{
+    background: #313A46;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.FheaderText{
+    color: whitesmoke;
+}
+#investmentList{
+    width: 90%;
+    text-align: left;
+    margin: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    
+}
+#investmentList p{
+    background-color:  #29313C;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    justify-content: center;
+    padding-top: 20px;
+    align-items: center;
+    color: lawngreen;
+    
+}
+#investmentList img{
+    width: 80%;
+    height: 130px;
+    border-radius: 20px;
+    display: block;    
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+}
+
+/* BALANCE SECTION*/
+.Bbackgroundfirst{
+    background-color: #242A35;
+    width: 90%;
+    height:150px;
+    margin: auto;
+    border-radius: 10px;
+    border: none;
+}
+.BBbackgroundd{
+    background: #313A46;
+    border: 1px solid #343C45;
+    padding: 10px;
+    border-radius: 5px;
+    width: 95%;
+    height: 140px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin: auto;
+}
+.userinnerBox1{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fa-money-bills{
+    color: lawngreen;
+    font-size: 40px;
+    margin-right: 50px;
+    padding: 2px;
+    position: relative;
+    bottom:12%;
+}
+.UserText{
+   font-size: 20px;
+   color: white;
+   
+}
+.userinnerBox2{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#withdrawBtn{
+    width: 100px;
+    padding: 5px;
+    margin: 10px;
+    margin-left: 40px;
+    background-color: lawngreen;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#depositBtn{
+    width: 100px;
+    padding: 5px;
+    margin: 10px;
+    margin-left: 40px;
+    background-color: whitesmoke;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#withdrawBtn:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 3px lawngreen;
+}
+#depositBtn:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 3px whitesmoke;
+}
+
+/* DEPOSIT SECTION*/
+.DBbackgroundfirst{
+    background-color: #242A35;
+    width: 90%;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 10px;
+    border: none;
+    
+}
+#deposit{
+    width: 100%;
+    margin-top: 10px;   
+    margin-bottom: 100px; 
+}
+input{
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    outline: none;
+}
+#proof{
+    padding: 0;
+    width: 230px;
+    color: whitesmoke;
+}
+.depositBtn{
+    width: 230px;
+    padding: 5px;
+    margin-top: 30px;
+    background-color: lawngreen;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 20px;
+}
+.proofText{
+    font-size: 10px;
+    color: lawngreen;
+    text-align: center;
+    margin-left: 20px;
+}
+.caution{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-left: 20px;
+}
+.caution span{
+    color: white;
+    font-size: 10px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+.cautioncontainer{
+    margin-bottom: 250px;
+}
+.cautioncontainer p{
+    font-size: 15px;
+    font-weight: bold;
+    color: lawngreen;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.cautioncontainer span{
+    text-align: center;
+    color: lawngreen;
+    font-size: 10px;
+    font-weight: lighter;
+    margin-left: 20px;
+}
+input:hover{
+    outline: 1px solid lawngreen;
+    box-shadow: 0px 0px 5px lawngreen;
+}

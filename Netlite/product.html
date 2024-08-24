@@ -1,0 +1,180 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body>
+    <header>
+       
+        <div class="bottom">
+            <div class="navbar">
+                <ul>
+                    
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="finance.html"><i class="fa-solid fa-coins"></i></a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-question"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main id="productMain">
+        
+        <h2 class="movieHeader" align="center">MOVIES ON SALE</h2>
+       <div class="backgroundd">
+           <div class="announcement-box">
+        <div class="announcement-content">Check out our Movie sales center, All the movies below are available for purchase, purchase any of the movie and earn 15% interest daily for 20days. Each movie can only be purchased twice! 
+        </div>
+    </div>
+    
+    <div class="productContainer">
+        <div class="productinner1">
+            <img src="productimage/2dbf1069153646f59661f1619d55c716.jpg" alt="product">
+        </div>
+        <div class="productinner2">
+            <p class="movieName">Movie Name: House of Gag</p>
+            <p>Earning Duration: 20days</p>
+            <p>Daily Interest: 270</p>
+            <p>Movie Sales: 1,500</p> 
+            <button class="buyBtn"  onclick="User.purchase(new Investment('House of Gag', 'productimage/2dbf1069153646f59661f1619d55c716.jpg', 1500, 270, 20))">Invest Now</button>
+        </div>
+    </div>
+      <div class="productContainer">
+        <div class="productinner1">
+            <img src="productimage/4679fd4ddcf7fe11a0255c1e7429bc43.jpeg" alt="product">
+        </div>
+        <div class="productinner2">
+            <p class="movieName">Movie Name: House Dragon</p>
+            <p>Earning Duration: 20days</p>
+            <p>Daily Interest: 18,000</p>
+            <p>Movie Sales: 100,000</p>
+            <button class="buyBtn"  onclick="User.purchase(new Investment('House of Gag', 'productimage/4679fd4ddcf7fe11a0255c1e7429bc43.jpeg', 100000, 18000, 20))">Invest Now</button>
+        </div>
+    </div>
+      <div class="productContainer">
+        <div class="productinner1">
+            <img src="productimage/c3c865c25fe7abf77c7a97d61976136b.jpg" alt="product">
+        </div>
+        <div class="productinner2">
+            <p class="movieName">Movie Name: Bridgerton</p>
+            <p>Earning Duration: 20days</p>
+            <p>Daily Interest: 9,000</p>
+            <p>Movie Sales: 50,000</p>
+             <button class="buyBtn"  onclick="User.purchase(new Investment('House of Gag', 'productimage/c3c865c25fe7abf77c7a97d61976136b.jpg',50000, 9000, 20))">Invest Now</button>
+        </div>
+    </div>
+      <div class="productContainer">
+        <div class="productinner1">
+            <img src="productimage/90efebe8d3386f697f5ef258a64eaaea.jpg" alt="product">
+        </div>
+        <div class="productinner2">
+            <p class="movieName">Movie Name: Stranger things</p>
+            <p>Earning Duration: 20days</p>
+            <p>Daily Interest: 7,200</p>
+            <p>Movie Sales: 40,000</p>
+             <button class="buyBtn"  onclick="User.purchase(new Investment('House of Gag',  'productimage/90efebe8d3386f697f5ef258a64eaaea.jpg',40000, 7200, 20))">Invest Now</button>
+        </div>
+    </div>
+      <div class="productContainer">
+        <div class="productinner1">
+            <img src="productimage/d8fba81b66ccee5bb1d685eec237ad5c.jpg" alt="product">
+        </div>
+        <div class="productinner2">
+            <p class="movieName">Movie Name: Prison Break</p>
+            <p>Earning Duration: 20days</p>
+            <p>Daily Interest: 3,600</p>
+            <p>Movie Sales: 20,000</p>
+             <button class="buyBtn"  onclick="User.purchase(new Investment('House of Gag', 'productimage/d8fba81b66ccee5bb1d685eec237ad5c.jpg',20000, 3600, 20))">Invest Now</button>
+        </div>
+    </div>
+      <div class="productContainer">
+        <div class="productinner1">
+            <img src="productimage/95234c5852d930de26ab305290cbd2af.jpg" alt="product">
+        </div>
+        <div class="productinner2">
+            <p class="movieName">Movie Name: Lupin</p>
+            <p>Earning Duration: 20days</p>
+            <p>Daily Interest: 2,250</p>
+            <p>Movie Sales: 15,000</p>
+            <button class="buyBtn"  onclick="User.purchase(new Investment('House of Gag', 'productimage/95234c5852d930de26ab305290cbd2af.jpg', 15000, 2250, 20))">Invest Now</button>
+        </div>
+    </div>
+      <div class="productContainer">
+        <div class="productinner1">
+            <img src="productimage/9fa9d682cb535afd1f4ccb89b476df58.jpg" alt="product">
+        </div>
+        <div class="productinner2">
+            <p class="movieName">Movie Name: Hunger game</p>
+            <p>Earning Duration: 20days</p>
+            <p>Daily Interest: 1,950</p>
+            <p>Movie Sales: 13,000</p>
+             <button class="buyBtn"  onclick="User.purchase(new Investment('House of Gag', 'productimage/9fa9d682cb535afd1f4ccb89b476df58.jpg', 13000, 1950, 20))">Invest Now</button>
+        </div>
+    </div>
+      <div class="productContainer">
+        <div class="productinner1">
+            <img src="productimage/de8247f5ff0f0eb83dadbe5fefc8fd31.jpg" alt="product">
+        </div>
+        <div class="productinner2">
+            <p class="movieName">Movie Name: Lucifer</p>
+            <p>Earning Duration: 20days</p>
+            <p>Daily Interest: 1,800</p>
+            <p>Movie Sales: 10,000</p>
+            <button class="buyBtn"  onclick="User.purchase(new Investment('House of Gag', 'productimage/de8247f5ff0f0eb83dadbe5fefc8fd31.jpg', 10000, 1800, 20))">Invest Now</button>
+        </div>
+    </div>
+      <div class="productContainer">
+        <div class="productinner1">
+            <img src="productimage/bc8414ff980394817cb5aa29d04ecdca.jpg" alt="product">
+        </div>
+        <div class="productinner2">
+            <p class="movieName">Movie Name: After Everything</p>
+            <p>Earning Duration: 20days</p>
+            <p>Daily Interest: 1,200</p>
+            <p>Movie Sales: 8,000</p>
+             <button class="buyBtn"  onclick="User.purchase(new Investment('House of Gag', 'productimage/bc8414ff980394817cb5aa29d04ecdca.jpg', 8000, 1200, 20))">Invest Now</button>
+        </div>
+    </div>
+      <div class="productContainer">
+        <div class="productinner1">
+            <img src="productimage/7a4b390bb307cdc483014c75e0d4e464.jpg" alt="product">
+        </div>
+        <div class="productinner2">
+            <p class="movieName">Movie Name: Damsel</p>
+            <p>Earning Duration: 20days</p>
+            <p>Daily Interest: 900</p>
+            <p>Movie Sales: 5,000</p>
+            <button class="buyBtn"  onclick="User.purchase(new Investment('House of Gag', 'productimage/7a4b390bb307cdc483014c75e0d4e464.jpg', 5000, 900, 20))">Invest Now</button>
+        </div>
+    </div>
+      <div class="productContainer">
+        <div class="productinner1">
+            <img src="productimage/2fcb4f256c56794f915ccbcc8762b84d.jpg" alt="product">
+        </div>
+        <div class="productinner2">
+            <p class="movieName">Movie Name: Morbius</p>
+            <p>Earning Duration: 20days</p>
+            <p>Daily Interest: 540</p>
+            <p>Movie Sales: 3,000</p>
+             <button class="buyBtn"  onclick="User.purchase(new Investment('Morbius', 'productimage/2fcb4f256c56794f915ccbcc8762b84d.jpg', 3000, 540, 20))">Invest Now</button>
+        </div>
+    </div>
+       </div>
+    </main>   
+    
+ <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
